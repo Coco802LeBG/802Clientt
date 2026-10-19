@@ -47,7 +47,7 @@ public final class GuiScaleManager {
             window.setScaleFactor(target);
             applying = true;
             try {
-                screen.resize(client, window.getScaledWidth(), window.getScaledHeight());
+               screen.resize(window.getScaledWidth(), window.getScaledHeight());
             } finally {
                 applying = false;
             }
